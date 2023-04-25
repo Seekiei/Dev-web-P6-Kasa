@@ -1,0 +1,20 @@
+.banner {
+    height: 210px;
+    width: 100%;
+    margin-top: 70px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+}
+    
+.title-banner {
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+    padding: 2% 50px;
+}

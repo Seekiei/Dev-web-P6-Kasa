@@ -1,0 +1,40 @@
+.collapse {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+
+    .collapse-toggle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FF6060;
+        height: 50px;
+        padding: 0 1%;
+        border-radius: 5px;
+        cursor: pointer;
+
+        h3 {
+            color: white;
+            font-size: 20px;
+            margin: 0px 0px 0px 10px;
+        }
+    }
+
+    .collapse-content {
+        background-color: #F7F7F7;
+        border-radius: 0 0 5px 5px;
+        height: auto;
+        padding: 20px 20px;
+        box-sizing: border-box;
+        color: #FF6060;
+        font-size: 20px;
+
+        p {
+            margin: 0;
+        }
+    }
+}

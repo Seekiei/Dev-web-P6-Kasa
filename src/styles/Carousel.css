@@ -1,0 +1,50 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .carousel .img-carousel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button{
+    border: none;
+    background: none;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .img-arrow {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .carousel-count{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 200%;
+  }
