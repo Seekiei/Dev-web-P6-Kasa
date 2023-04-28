@@ -1,14 +1,14 @@
 import React from "react"
-import '../styles/Banner.css'
+import '../styles/Banner.scss'
 
 function Banner({ backgroundImage, title }) {
     
     const bannerStyle = {
         backgroundImage: `url(${backgroundImage})`,
-      }
+    }
 
     return(
-        <div>
+        <div className="banner-container">
             <section className='banner' style={bannerStyle}>
                 <h1 className="title-banner">{title}</h1>
             </section>

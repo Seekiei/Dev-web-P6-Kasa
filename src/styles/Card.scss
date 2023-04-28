@@ -54,3 +54,35 @@
         z-index: 3;
     }
 }
+
+
+@media (max-width: 900px) {
+    .grid-card{
+        background-color: white;
+        padding: 0;
+    }
+
+    
+}
+
+@media (max-width: 740px) {
+
+    .grid-card{
+        display: flex;
+        flex-direction: column;
+
+        .card{
+            width: 100%;
+        }
+
+        img{
+            object-fit: cover;
+            background-position: center;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+    
+    }
+    
+}
+

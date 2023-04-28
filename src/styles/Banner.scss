@@ -1,5 +1,5 @@
 .banner {
-    height: 210px;
+    height: 341px;
     width: 100%;
     margin-top: 70px;
     border-radius: 25px;
@@ -18,3 +18,24 @@
     font-weight: 500;
     padding: 2% 50px;
 }
+
+
+@media (max-width: 900px) {
+    
+    
+    .banner{
+        height: 150px;
+        box-sizing: border-box;
+        background-position: center;
+        background-size: cover;
+        margin-top: 20px;
+    }
+
+    .title-banner{
+        font-size: 24px;
+        align-items: Left;
+        vertical-align: Bottom;
+    }
+    
+}
+

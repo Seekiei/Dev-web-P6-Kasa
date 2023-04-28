@@ -1,9 +1,11 @@
 import React from "react";
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import data from '../datas/data.json';
+import Error from './Error'
 import Carousel from "../components/SlideShow";
 import Collapse from "../components/Collapse"
 import '../styles/Location.scss'
+import Etoiles from '../components/etoiles'
 
 
 
@@ -11,7 +13,13 @@ function Location(){
 
   const { id } = useParams()
   const location = data.find(location => location.id === id)
-    
+  const navigate = useNavigate();
+
+  if (!location) {
+    navigate('/Error')
+    return (<Error/>)
+  }
+
       return (
         <div className="main-location">
             <Carousel pictures={location.pictures}/>
@@ -28,14 +36,16 @@ function Location(){
                 </ul>
               </div>
               <div className="location-host">
+                <div className="host-container">
                 <p>{location.host.name}</p>
-                <img className="img-host" src={location.host.picture} alt="" />
-                {/* <i>{location.rating}</i> */}
+                <img className="img-host" src={location.host.picture} alt=""/>
+                </div>
+                <Etoiles rating={parseInt(location.rating)}/>
               </div>
             </div>
             <div className="location-bottom" >
               <div className="collapse-left">
-                <Collapse className="locatio-collapse" title={'Description'} width='98%' widthdesc='100%'>
+                <Collapse className="location-collapse" title={'Description'} width='98%' widthdesc='100%'>
                   <p>{location.description}</p>
                 </Collapse>
               </div>

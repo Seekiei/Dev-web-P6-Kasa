@@ -1,0 +1,29 @@
+.body {
+    max-width: 1820px;
+    margin: auto;
+    padding: 0 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+
+@media (max-width: 1236px) {
+    .body {
+        margin: auto;
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .body {
+        margin: auto;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 490px) {
+    .body {
+        margin: auto;
+        padding: 0 20px;
+    }
+  }

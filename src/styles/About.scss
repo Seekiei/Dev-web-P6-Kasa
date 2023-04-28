@@ -1,0 +1,22 @@
+.collapse-container{
+    margin-top: 100px;
+    margin-bottom: 136px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+
+    .main-about{
+
+        .collapse-container{
+            margin-top: 10px;
+        }
+    }
+
+    
+
+    
+    
+}
