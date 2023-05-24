@@ -9,9 +9,9 @@ import Footer from './components/Footer';
 import Location from './pages/Location';
 import './index.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')); // créé un point d'entré racine ("root") à l'intérieur de l'élément DOM ayant l'ID "root"
 root.render(
-  <React.StrictMode>
+  <React.StrictMode> 
     <BrowserRouter>
     <div className='body'>
       <Header />

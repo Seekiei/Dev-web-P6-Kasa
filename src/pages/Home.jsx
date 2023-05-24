@@ -8,8 +8,6 @@ import customData from '../datas/data.json';
 
 function Home() {
 
-  console.log(customData)
-
   return (
     <div className="main">
     
@@ -18,7 +16,7 @@ function Home() {
       <div className="grid-card">
       {
         customData.map((cardData)=> {
-          return(
+          return( 
             <Card key={cardData.id} id={cardData.id} cover={cardData.cover} title={cardData.title} />
           )
         })

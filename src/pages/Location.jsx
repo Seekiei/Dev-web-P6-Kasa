@@ -11,9 +11,9 @@ import Etoiles from '../components/etoiles'
 
 function Location(){
 
-  const { id } = useParams()
-  const location = data.find(location => location.id === id)
-  const navigate = useNavigate();
+  const { id } = useParams() // le hook useParams récupére l'id de la location à partir de l'url de la page
+  const location = data.find(location => location.id === id) // la méthode find trouve l'objet de données qui correspond à l'id de la location demandée
+  const navigate = useNavigate(); // Le hook useNavigate est utilisé pour obtenir une fonction navigate qui permet de naviguer vers une autre page de l'application
 
   if (!location) {
     navigate('/Error')

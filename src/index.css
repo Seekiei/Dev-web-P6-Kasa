@@ -7,6 +7,9 @@
 }
 
 
+
+/* Responsive */
+
 @media (max-width: 1236px) {
     .body {
         margin: auto;

@@ -4,7 +4,7 @@ import '../styles/Banner.scss'
 function Banner({ backgroundImage, title }) {
     
     const bannerStyle = {
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `url(${backgroundImage})`, // image de fond
     }
 
     return(

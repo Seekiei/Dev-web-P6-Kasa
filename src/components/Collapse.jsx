@@ -5,9 +5,9 @@ import arrowDown from '../assets/arrow-down.png'
 
 function Collapse({ title, children, width = "75%", widthdesc = "100%" }) {
 
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false) // useState est un hook de gestion d'état dans React Il est utilisé pour ajouter la gestion de l'état à un composant fonctionnel
 
-    const widthCollapse = {
+    const widthCollapse = { // Cette propriété est définie dynamiquement en utilisant la valeur de la prop width
         width: width
       } 
 
@@ -21,9 +21,10 @@ function Collapse({ title, children, width = "75%", widthdesc = "100%" }) {
                 <h3>{title}</h3>
                 <img className='collapse-img' src={isOpen ? arrowUp : arrowDown } alt="collapse-icon" />
             </div>
-            {isOpen && <div className='collapse-content' style={widthDesc}>
+            {isOpen && //cette condition permet d'afficher la description de la collapse seulement si c'est true
+            <div className='collapse-content' style={widthDesc}>
                 {children}
-                </div>}
+            </div>}
         </div>
     )
 }

@@ -15,16 +15,3 @@ function Card({ title, cover, id }){
 }
 
 export default Card
-
-
-
-
-
-
-
-
-
-
-
-
-// `/Location/${id}`
